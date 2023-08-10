@@ -1,0 +1,158 @@
+/* * GLOBAL BUTTONS */
+button {
+  border: 1px solid var(--border);
+  background-color: var(--background1);
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 0.8rem;
+  width: 10rem;
+  display: block;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    border 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    border 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    border 0.3s ease-in-out;
+  -ms-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    border 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    border 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--primary);
+  color: #fff;
+  border: 1px solid var(--primary);
+}
+
+/* * MEGA MENU BUTTON >>> */
+.megamenu-button{
+  background-color: var(--primary);
+  color: #fff;
+  border: 1px solid var(--primary);
+}
+/* * MEGA MENU BUTTON <<< */
+
+/* * SEARCH BUTTON */
+.search-button {
+  width: auto;
+  border: 1px solid var(--border);
+}
+
+/* * SLIDER BUTTON */
+.slider-button {
+  background-color: var(--primary);
+  border: none;
+  color: #fff;
+  width: 12rem;
+  height: 3.5rem;
+  font-size: 1.2rem;
+}
+
+/* * CONTACT BUTTON >>> */
+.contact-form-summit button{
+  min-width: 36%;
+  background-color: #000;
+  color: #fff;
+}
+
+.contact-form-summit button:hover {
+  border: 1px solid #000;
+}
+/* * CONTACT BUTTON <<< */
+
+/* * REVIEW BUTTON >>> */
+.review-button{
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+}
+
+.review-button:hover {
+  border: 1px solid #000;
+  background-color: #000;
+}
+/* * CREVIEW BUTTON<<< */
+
+/* * ACCOUNT BUTTON >>> */
+.account-form-button{
+  background-color: var(--discount);
+  color: #fff;
+  border: 1px solid var(--discount);
+}
+
+.account-form-button:hover{
+  border: 1px solid var(--discount);
+  background-color: var(--discount);
+} 
+/* * ACCOUNT BUTTON <<< */
+
+/* * CART BUTTON >>> */
+@media screen and (max-width:992px){
+  .cart-button{
+    max-width: 8rem;
+  }
+}
+/* * CART BUTTON <<< */
+
+/* * CAROUSEL BUTTON >>> */
+.carousel-buttons {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  color: #000;
+  font-size: 3rem;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+}
+
+.carousel-buttons:hover {
+  opacity: 1;
+}
+
+.carousel-buttons .carousel-button-left {
+  position: absolute;
+  left: -4rem;
+}
+
+.carousel-buttons .carousel-button-right {
+  position: absolute;
+  right: -4rem;
+}
+
+/*  RESPONSIVE DESIGN (MEDIA QUERIES) */
+@media screen and (max-width: 1500px) {
+  .carousel-buttons {
+    font-size: 4rem;
+  }
+  .carousel-buttons .carousel-button-left {
+    left: 0rem;
+  }
+
+  .carousel-buttons .carousel-button-right {
+    right: 0rem;
+  }
+}
+/* * CAROUSEL BUTTON <<< */
+
+/* * RESPONSIVE DESIGN (MEDIA QUERIES) >>> */
+@media screen and (max-width: 1200px) {
+  .megamenu-button {
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 0.35rem;
+    width: 8rem;
+  }
+}
+/* * RESPONSIVE DESIGN (MEDIA QUERIES) <<< */

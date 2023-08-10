@@ -1,0 +1,17 @@
+.blog-page .blog-wrapper{
+  margin-top: 7.5rem;
+}
+
+.blog-card.blog-page {
+  display: block;
+}
+
+.blog-card:nth-child(5) .card-top {
+  background-image: url("../../../img/blogs/blog5.jpg");
+  background-size: cover;
+}
+
+.blog-card:nth-child(6) .card-top {
+  background-image: url("../../../img/blogs/blog6.jpg");
+  background-size: cover;
+}

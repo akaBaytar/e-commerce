@@ -1,0 +1,188 @@
+.slider {
+  position: relative;
+  margin-top: 7.5rem;
+  width: 100%;
+  height: calc(100vh - (7.5rem));
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+/* * SLIDE IMG & INFO >>> */
+.slider .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+}
+
+.slide.activeSlide {
+  opacity: 1;
+}
+
+.slider .slide img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.slider .slide-desc {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  top: 30%;
+  left: 20%;
+}
+.slide-desc p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.slide-desc h2 {
+  font-size: 4rem;
+}
+/* * SLIDE IMG & INFO <<< */
+
+/* * SLIDE BUTTONS >>> */
+.slide-buttons .slide-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  width: 4rem;
+  height: 4rem;
+  background-color: #fff;
+  cursor: pointer;
+  opacity: 0.3;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -ms-transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.slide-buttons .slide-button:hover {
+  background-color: var(--primary);
+  opacity: 1;
+}
+
+.slide-button i {
+  font-size: 2rem;
+  color: #000000;
+  transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+}
+
+.slide-button:hover i {
+  color: #fff;
+}
+
+.prev-slide-button {
+  left: 2rem;
+}
+
+.next-slide-button {
+  right: 2rem;
+}
+/* * SLIDE BUTTONS <<< */
+
+/* * SLIDE DOTS >>> */
+.slide-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.slide-dots .slide-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: var(--primary);
+  opacity: 30%;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+}
+
+.slide-dot.activeDot {
+  opacity: 1;
+}
+
+.slide-dot:hover {
+  opacity: 1;
+}
+/* * SLIDE DOTS <<< */
+
+/* * RESPONSIVE DESIGN (MEDIA QUERIES) >>> */
+@media screen and (max-width: 768px) {
+  .slide img {
+    object-position: -60rem;
+  }
+
+  .slide-desc p {
+    font-size: 1.5rem;
+  }
+
+  .slide-desc h2 {
+    font-size: 3rem;
+  }
+
+  .slide-buttons .slide-button {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .slide-button i {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .slide img {
+    object-position: -65rem;
+  }
+  
+  .slide-desc p {
+    font-size: 1.5rem;
+  }
+
+  .slide-desc h2 {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .slide img {
+    object-position: -75rem;
+  }
+}
+/* * RESPONSIVE DESIGN (MEDIA QUERIES) <<< */

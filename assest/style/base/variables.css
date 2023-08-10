@@ -1,0 +1,17 @@
+:root {
+  --primary: #1367ef;
+  --discount: #ff3c20;
+  --background1: #efefef;
+  --background2: #f5f5f5;
+  --star: #ffd700;
+  --border: #dee0ea;
+  --blog: #b2b3b8;
+  --old-price: #7d7d7d;
+  --footer-desc: #75767c;
+}
+
+/* * MOBILE MENU VARIABLES */
+.header{
+  --height: .17rem;
+  --space: calc(var(--height) * 2.5);
+}

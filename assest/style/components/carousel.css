@@ -1,0 +1,168 @@
+/* * PRODUCT SECTION >>> */
+.card {
+  position: relative;
+  background-color: var(--background1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+}
+
+.card .discount {
+  position: absolute;
+  z-index: 2;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--discount);
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.card .shortcut-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  gap: 0.5rem;
+  z-index: 2;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .shortcut-buttons {
+  opacity: 1;
+}
+
+.shortcut-buttons i {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #000;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.3rem;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+}
+
+.shortcut-buttons .add-to-cart.disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.shortcut-buttons .tooltip {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8rem;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.shortcut-buttons i:hover > .tooltip {
+  opacity: 1;
+  visibility: visible;
+  left: 2rem;
+  background-color: #000;
+}
+
+.card .card-top {
+  width: 250px;
+  height: 310px;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-top .product-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.card-top .product-img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -ms-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+}
+
+.card-top:hover .product-img-hover {
+  opacity: 1;
+}
+
+.card .card-bottom {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-bottom .product-name {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card-bottom .product-stars {
+  color: goldenrod;
+}
+
+.card-bottom .product-price {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.product-price .new-price {
+  color: var(--discount);
+  font-weight: 600;
+}
+
+.product-price .old-price {
+  color: var(--old-price);
+  text-decoration: line-through;
+  font-size: 0.9rem;
+}
+/* * PRODUCT SECTION <<< */

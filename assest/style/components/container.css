@@ -1,0 +1,48 @@
+.wrapper {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* * RESPONSIVE DESIGN (MEDIA QUERIES) >>> */
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1180px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    max-width: 95%;
+  }
+}
+/* * RESPONSIVE DESIGN (MEDIA QUERIES) <<< */

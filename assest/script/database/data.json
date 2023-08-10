@@ -1,0 +1,153 @@
+[
+  {
+    "id": 1,
+    "name": "Analogue Resin Strap",
+    "price": {
+      "oldPrice": 165.0,
+      "newPrice": 108.0
+    },
+    "sku": "ARS33BRK",
+    "discount": 33,
+    "img": {
+      "image": "../../../img/products/product1/1.png",
+      "thumbnails": [
+        "../../../img/products/product1/1.png",
+        "../../../img/products/product1/2.png",
+        "../../../img/products/product1/3.png"
+      ]
+    }
+  },
+
+  {
+    "id": 2,
+    "name": "Ridley High Waist",
+    "price": {
+      "oldPrice": 200.0,
+      "newPrice": 150.0
+    },
+    "sku": "RHW25BRK",
+    "discount": 25,
+    "img": {
+      "image": "../../../img/products/product2/1.png",
+      "thumbnails": [
+        "../../../img/products/product2/1.png",
+        "../../../img/products/product2/2.png",
+        "../../../img/products/product2/3.png"
+      ]
+    }
+  },
+
+  {
+    "id": 3,
+    "name": "Blush Beanie",
+    "price": {
+      "oldPrice": 100.0,
+      "newPrice": 50.0
+    },
+    "sku": "BLB50BRK",
+    "discount": 50,
+    "img": {
+      "image": "../../../img/products/product3/1.png",
+      "thumbnails": [
+        "../../../img/products/product3/1.png",
+        "../../../img/products/product3/2.png",
+        "../../../img/products/product3/3.png"
+      ]
+    }
+  },
+
+  {
+    "id": 4,
+    "name": "Mercury Toe",
+    "price": {
+      "oldPrice": 180.0,
+      "newPrice": 60.0
+    },
+    "sku": "MET66BRK",
+    "discount": 66,
+    "img": {
+      "image": "../../../img/products/product4/1.png",
+      "thumbnails": [
+        "../../../img/products/product4/1.png",
+        "../../../img/products/product4/2.png",
+        "../../../img/products/product4/3.png"
+      ]
+    }
+  },
+
+  {
+    "id": 5,
+    "name": "High Waist",
+    "price": {
+      "oldPrice": 90.0,
+      "newPrice": 45.0
+    },
+    "sku": "HIW50BRK",
+    "discount": 50,
+    "img": {
+      "image": "../../../img/products/product5/1.png",
+      "thumbnails": [
+        "../../../img/products/product5/1.png",
+        "../../../img/products/product5/2.png",
+        "../../../img/products/product5/3.png"
+      ]
+    }
+  },
+
+  {
+    "id": 6,
+    "name": "Blush Mercury",
+    "price": {
+      "oldPrice": 200.0,
+      "newPrice": 150.0
+    },
+    "sku": "BLM25BRK",
+    "discount": 25,
+    "img": {
+      "image": "../../../img/products/product6/1.png",
+      "thumbnails": [
+        "../../../img/products/product6/1.png",
+        "../../../img/products/product6/2.png",
+        "../../../img/products/product6/3.png"
+      ]
+    }
+  },
+
+  {
+    "id": 7,
+    "name": "Resin Beanie",
+    "price": {
+      "oldPrice": 140.0,
+      "newPrice": 70.0
+    },
+    "sku": "REB50BRK",
+    "discount": 50,
+    "img": {
+      "image": "../../../img/products/product7/1.png",
+      "thumbnails": [
+        "../../../img/products/product7/1.png",
+        "../../../img/products/product7/2.png",
+        "../../../img/products/product7/3.png"
+      ]
+    }
+  },
+
+  {
+    "id": 8,
+    "name": "Ridley Toe",
+    "price": {
+      "oldPrice": 200.0,
+      "newPrice": 180.0
+    },
+    "sku": "RIT10BRK",
+    "discount": 10,
+    "img": {
+      "image": "../../../img/products/product8/1.png",
+      "thumbnails": [
+        "../../../img/products/product8/1.png",
+        "../../../img/products/product8/2.png",
+        "../../../img/products/product8/3.png"
+      ]
+    }
+  }
+]

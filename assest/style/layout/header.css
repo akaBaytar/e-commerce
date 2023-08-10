@@ -1,0 +1,152 @@
+/* * GLOBAL NOTIFICATION >>> */
+.global-notification {
+  width: 100%;
+  min-height: 2.5rem;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.2rem 0;
+}
+
+.global-notification p {
+  color: #fff;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.global-notification a {
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+/* * GLOBAL NOTIFICATION <<< */
+
+/* * HEADER >>> */
+header {
+  width: 100%;
+  border-bottom: 1px solid var(--border);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+/* LOGO - HEADER-LEFT >>> */
+.header-left a {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+/* LOGO - HEADER-LEFT <<< */
+
+/* HEADER-RIGHT >>> */
+.header-right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.header-right i {
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+}
+
+.header-right i:hover {
+  color: var(--primary);
+}
+
+.header-right .bi-person {
+  font-size: 1.5rem;
+}
+
+.shopping-card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -0.54rem;
+  top: -0.5rem;
+  background-color: #000;
+  width: 1.08rem;
+  height: 1.08rem;
+  color: #fff;
+  font-size: 0.75rem;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -ms-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+}
+
+.bi-bag:hover + .shopping-card-icon {
+  background-color: var(--primary);
+}
+/* HEADER-RIGHT <<< */
+/* * HEADER <<< */
+
+/* * RESPONSIVE DESIGN (MEDIA QUERIES) >>> */
+@media screen and (max-width: 1400px) {
+  .header-right {
+    gap: 1rem;
+    padding-right: 1rem;
+  }
+
+  .shopping-card-icon {
+    right: 5px;
+    top: -5px;
+    width: 13px;
+    height: 13px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header-right i {
+    font-size: 1rem;
+  }
+
+  .header-right .bi-person {
+    font-size: 1.2rem;
+  }
+
+  .shopping-card-icon {
+    right: 6px;
+    top: -4px;
+    width: 12px;
+    height: 12px;
+    font-size: 0.6rem;
+  }
+
+  .global-notification p,
+  .global-notification a {
+    font-size: 0.65rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .global-notification p a {
+    display: block;
+    text-align: center;
+  }
+}
+/* * RESPONSIVE DESIGN (MEDIA QUERIES) <<< */

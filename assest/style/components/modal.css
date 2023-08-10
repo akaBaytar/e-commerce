@@ -1,0 +1,225 @@
+.search-wrapper {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: #00000060;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+}
+
+.search-container {
+  position: relative;
+  width: 50rem;
+  height: auto;
+  background-color: var(--background2);
+  padding: 3rem 2rem;
+}
+
+.search-container .close-button {
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+}
+
+.close-button:hover {
+  color: var(--primary);
+}
+
+.search-container .search-top {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.search-top p {
+  color: #00000080;
+  font-style: italic;
+}
+
+.search-container .search-center {
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+  display: flex;
+}
+
+.search-center input {
+  outline: none;
+  border: 1px solid var(--border);
+  padding-left: 0.5rem;
+  width: 100%;
+  font-size: 0.85rem;
+}
+
+.search-center input::placeholder {
+  color: #00000080;
+}
+
+.search-center input::-webkit-search-cancel-button {
+  appearance: none;
+}
+
+.search-center i {
+  font-size: 1rem;
+}
+
+.search-container .search-bottom {
+  padding: 1rem 0;
+}
+
+.search-bottom .search-header {
+  border-bottom: 1px solid var(--border);
+}
+
+.search-bottom .search-results {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  column-gap: 0.5rem;
+  border: 1px solid var(--border);
+  border-top: none;
+  background-color: var(--background1);
+}
+
+.search-results .search-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: calc(50% - 0.25rem);
+  background-color: var(--background1);
+  cursor: pointer;
+}
+
+.search-results .search-item:hover {
+  background-color: var(--border);
+}
+
+.search-item-image {
+  position: relative;
+  width: 4.4rem;
+  height: 5.5rem;
+}
+
+.search-item-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.search-item-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.2rem;
+  justify-content: center;
+}
+
+.search-item-text .search-item-title {
+  font-weight: 500;
+}
+
+.search-item-text .search-item-sku {
+  color: var(--footer-desc);
+  font-size: 0.8rem;
+}
+
+.search-item-text .search-item-price {
+  color: var(--discount);
+  font-size: 0.9rem;
+}
+/* * RESPONSIVE DESIGN (MEDIA QUERIES) >>> */
+@media screen and (max-width: 992px) {
+  .search-container {
+    width: 40rem;
+  }
+  .search-top .search-title {
+    font-size: 2rem;
+  }
+  .search-bottom .search-item-title {
+    font-size: 1.2rem;
+  }
+  .search-item .search-item-title {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search-container {
+    width: 35rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .search-top .search-title {
+    font-size: 1.5rem;
+  }
+  .search-bottom .search-item-title {
+    font-size: 1rem;
+  }
+  .search-results .search-item {
+    height: 4.4rem;
+  }
+  .search-item .search-item-title {
+    font-size: 0.9rem;
+  }
+  .search-item .search-item-price {
+    font-size: 0.8rem;
+  }
+  .search-item .search-item-image {
+    width: 3.2rem;
+    height: 4.2rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .search-container {
+    padding: 1rem 1.5rem;
+    width: 25rem;
+  }
+  .search-results .search-item {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .search-container {
+    width: 20rem;
+  }
+  .search-container .close-button {
+    font-size: 1.2rem;
+    top: 0.3rem;
+    right: 0.3rem;
+  }
+  .search-container .search-top {
+    padding-bottom: 0.5rem;
+  }
+  .search-top p {
+    font-size: 0.8rem;
+  }
+  .search-center input {
+    font-size: 0.8rem;
+  }
+}
+/* * RESPONSIVE DESIGN (MEDIA QUERIES) <<< */
