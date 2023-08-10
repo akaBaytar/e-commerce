@@ -146,10 +146,6 @@
 
 /* * RESPONSIVE DESIGN (MEDIA QUERIES) >>> */
 @media screen and (max-width: 768px) {
-  .slide img {
-    object-position: -60rem;
-  }
-
   .slide-desc p {
     font-size: 1.5rem;
   }
@@ -168,21 +164,12 @@
   }
 }
 @media screen and (max-width: 576px) {
-  .slide img {
-    object-position: -65rem;
-  }
-  
   .slide-desc p {
     font-size: 1.5rem;
   }
 
   .slide-desc h2 {
     font-size: 3.5rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  .slide img {
-    object-position: -75rem;
   }
 }
 /* * RESPONSIVE DESIGN (MEDIA QUERIES) <<< */
