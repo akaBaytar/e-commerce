@@ -1,2 +1,2 @@
 # e-commerce
- freelance e-commerce project with html5, css3 and vanilla javascript.
+E-commerce website using HTML5, CSS, and vanilla JavaScript. Product and shopping cart features are stored in localstorage. The website includes pages for shopping, blogs, cart, login/signup, and single products. While developing this project, I wasn't proficient in SASS yet, so I coded it with pure CSS, but followed the SASS pattern and I tried to apply JavaScript methods I learned in my training.
